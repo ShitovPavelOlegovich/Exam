@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunter: интернет-магазин туристического снаряжения</title>
+    <link rel="stylesheet" href="exam.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <!-- навигационная панель -->
+    <nav class="nav">
+        <div class="a" style="margin-right: 400px;">
+               <button id="openCity"><a href="#">Пенза</a></button>
+            <div id="city" class="city-modal"> 
+                <div class="city-content ">
+                    <h1 style="margin-left: 40px;">ВЫБЕРИТЕ ГОРОД:</h1><hr>
+                    <div style="margin-left: 35px;">
+                        <select style="width: 400px; height: 30px;" id="inputCity" name="inputCity">    
+                            <option value="Москва">Москва</option>
+                            <option value="Пенза">Пенза</option>
+                            <option value="Саратов">Саратов</option>
+                            <option value="Санкт-Петербург">Санкт-Петербург</option>
+                            <option value="Екатеринбург">Екатеринбург</option>
+                            <option value="Воронеж">Воронеж</option>
+                            <option value="Омск">Омск</option>
+                            <option value="Пермь">Пермь</option>
+                            <option value="Казань">Казань</option>
+                            <option value="Уфа">Уфа</option>
+                            <option value="Челябинск">Челябинск</option>
+                            <option value="Ростов-на-Дону">Ростов-на-Дону</option>
+                        </select>
+                    </div>
+                   <div id="inputCity2" style="margin-top: 30px;">
+                        <ol class="text">
+                            <p>Москва</p>
+                            <p>Пенза</p>
+                            <p>Саратов</p>
+                            <p>Санкт-Петербург</p>
+                            <p>Екатеринбург</p>
+                            <p>Воронеж</p>
+                        </ol>
+                        <ol class="text" style="margin-left: 300px; margin-top: -210px;">
+                            <p>Омск</p>
+                            <p>Пермь</p>
+                            <p>Казань</p>
+                            <p>Уфа</p>
+                            <p>Челябинск</p>
+                            <p>Ростов-на-Дону</p>
+                        </ol><hr>
+                   </div>
+                    <input id="closeCity" type="submit" value="Close">
+                </div>
+            </div>
+            <!--Доставка -->
+                <button id="openDelivery"><a href="#">Доставка</a></button>
+                <div id="deliveryModal" class="delivery-modal">
+                    <div class="delivery-content">
+                        <h1>Доставка товаров для рыбалки, охоты и туризма в разные города.<hr></h1>
+                        
+                            <h3>
+                                Магазин "Hunter" рад предложить широкий ассортимент товаров для рыбалки, <br>
+                                охоты и туризма с доставкой по всей стране.<br>
+                                Мы понимаем, что ваше время и комфорт - важны, и стремимся сделать процесс получения <br>
+                                необходимых снаряжений и аксессуаров максимально удобным.
+                            </h3>
+                           <h4>Прайс на доставку:</h4>
+                           <li> <strong>Москва и область:</strong> 300 рублей.</li><br>
+                           <li> <strong>Санкт-Петербург и область:</strong> 350 рублей.</li><br>
+                           <li> <strong>Регионы России (за исключением далеких и труднодоступных мест):</strong> 450 рублей.</li><br>
+                           <li> <strong>Дальние и труднодоступные регионы:</strong> 800 рублей.</li><br>
+                           <li> <strong>Самовывоз из нашего магазина (г. Москва):</strong> Бесплатно.</li><br>
+                           <li> Мы также предоставляем бесплатную доставку на заказы свыше 5000 рублей вне зависимости от вашего местоположения.</li>
+
+                           <h4>
+                                Наша команда профессионалов гарантирует быструю обработку заказов и надежную упаковку товаров,<br>
+                                 чтобы они пришли к вам в идеальном состоянии. <br>
+                                Магазин "Природный Адвентюрист" всегда готов предоставить вам лучший опыт покупок и уверенность в том, что ваша рыбалка, <br>
+                                охота или приключения на природе будут незабываемыми.<br><hr>
+                           </h4>
+                           <input id="closeDelivery" type="submit" value="Close">
+                    </div>
+                </div>
+            </div>
+            <div class="a" style="margin-left: 300px;">
+
+                <!--Доставка оптом-->
+                <button id="openOptDelivery"><a href="#">Опт</a></button>
+                <div id="optDeliveryModal" class="delivery-modal">
+                    <div class="delivery-content">
+                        <h1>Доставка оптовых партий товаров для рыбалки, охоты и туризма в разные города.<hr></h1>
+                        <h3>
+                            Наш магазин "Hunter" гордится предоставлением качественных товаров для рыбалки,<br> 
+                            охоты и туризма оптом по всей стране. Мы понимаем, насколько важно обеспечить ваш бизнес надежным снаряжением и аксессуарами,<br> 
+                            и готовы обеспечить вас исключительно лучшими продуктами.<br>
+                        </h3>
+
+                        <h4>Прайс на оптовую доставку:</h4>
+                        <li><strong>Москва и область:</strong> 5000 рублей за партию.</li><br>
+                        <li><strong>Санкт-Петербург и область:</strong> 5500 рублей за партию.</li><br>
+                        <li><strong>Регионы России (за исключением далеких и труднодоступных мест):</strong> 6000 рублей за партию.</li><br>
+                        <li><strong>Дальние и труднодоступные регионы:</strong> По запросу, в зависимости от местоположения.</li><br>
+                        <li><strong>Самовывоз из нашего центрального склада:</strong> Бесплатно.</li>
+
+                        <h4>
+                            Мы предоставляем гибкие условия сотрудничества, быструю обработку заказов и надежную упаковку грузов.<br>  
+                            Наша команда специалистов готова помочь вам выбрать наилучшие товары под ваш бизнес и уделяет особое внимание качеству обслуживания.<br>  
+                            Независимо от того, где находится ваш бизнес, мы гарантируем своевременную и безопасную доставку,<br>  
+                            чтобы вы могли продолжать развиваться и удовлетворять потребности своих клиентов.<hr><br> 
+                        </h4>
+                        <input id="closeOptDelivery" type="submit" value="Close">
+                    </div>
+                </div>
+
+
+                <!--Гарантия-->
+                <button id="openQuarantee"><a href="#">Гарантии</a></button>
+                <div id="guaranteeModal" class="delivery-modal">
+                    <div class="delivery-content">
+                        <h1>Гарантия Качества в Магазине "Hunter".<hr></h1>
+                        <h3>
+                            В нашем магазине мы ценим вашу страсть к рыбалке, охоте и туризму,<br>  
+                            и стремимся обеспечить вас только самыми высококачественными товарами. <br> 
+                            Мы гордимся предоставлением продукции, которой можно доверять, и наши гарантии на качество следующие:<br> 
+                        </h3>
+                        <li><strong>Сертифицированные бренды:</strong> Мы сотрудничаем только с известными производителями, <br> 
+                            которые предлагают товары, соответствующие высоким стандартам качества и безопасности.</li><br> 
+
+                        <li><strong>Гарантированный возврат:</strong> Если вы обнаружите дефект или несоответствие товара, <br> 
+                            мы гарантируем возможность его возврата или обмена в соответствии с нашей политикой возврата.</li><br> 
+
+                        <li><strong>Тестирование перед продажей:</strong> Мы тщательно проверяем товары перед тем, как они попадут к вам. <br> 
+                            Это гарантирует, что вы получите исправные и полностью функциональные изделия.<hr></li><br>
+                            <input id="closeQuarantee" type="submit" value="Close"> 
+                    </div>
+                </div>
+
+
+                <!--Отзывы-->
+                <button id="openReviews"><a href="#">Отзывы</a></button>
+                <div id="reviewsModal" class="delivery-modal">
+                    <div class="delivery-content">
+                        <h2>Оставить отзыв:</h2>
+                            <label for="username3">Your name:</label>
+                            <input type="text" id="username3" name="username3" placeholder="Name..." style="width: 487px;" required><br>
+
+                            <label for="yourMessage">Your message:</label>
+                            <textarea style="height: 100px; width: 500px;" id="message" name="message" placeholder="Your message..." required></textarea><br>
+                            <form id="userMessage"><input  type="submit" value="Отправить" style="width: 100%;"><br></form>
+                            
+                            <div>
+                                <h2>Список отзывов:</h2>
+                                <ul><strong>Имя:</strong> Олег <strong><br><hr> Ваш отзыв:</strong> Спасибо, все отлично.</ul><hr>
+                                <ul><strong>Имя:</strong> Александр <strong><br><hr> Ваш отзыв:</strong> Спасибо за отличный товар, все качественно.</ul><hr>
+                                <ul id="message-list"></ul>
+                            </div>
+                            <input id="closeReviews" type="submit" value="Close">
+                    </div>
+                </div>
+
+
+
+
+                 <!--Контакты-->
+                <button id="openContacts"><a href="#">Контакты</a></button>
+                <div id="contactsModal" class="delivery-modal">
+                    <div class="delivery-content">
+                        <h1>Как с нами связаться:<hr></h1>
+                        <li><strong>Название магазина:</strong> "Hunter"</li><br>
+                        <li><strong>Адрес:</strong> 1234 Вымышленная улица, Вымышленный город, Виртуальная страна</li><br>
+                        <li><strong>Телефон:</strong> +7 (800) 100-1010</li><br>
+                        <li><strong>Электронная почта:</strong> info@hunter-store.com</li><br>
+                        <li><strong>Сайт:</strong> www.hunter-store.com</li><br>
+                        <li><strong>Instagram:</strong> @hunter-store</li><br>
+                        <li><strong>Facebook:</strong> /hunter-store</li><br>
+                        <li><strong>Twitter:</strong> @hunter-store<hr></li><br>
+                        <input id="closeContacts" type="submit" value="Close">
+                    </div>
+                </div>
+            </div>
+    </nav>
+    <!-- контент -->
+    <div class="content" style="margin-left: 550px;">
+        <img src="pictures\turkey-hunting-the-hunter-clipart-13.png" width="100px" height="100px">
+        <h1>8-800-100-10-10</h1>
+        <div class="search-bar" style="padding-top: 20px; padding-left: 40px;">
+            <form>
+                <input type="text" placeholder="Поиск...">
+                <input type="submit" value="Поиск">
+            </form>
+        </div>
+        <div>
+             <!-- Корзина -->
+            <button id="openBasket"><img title="Корзина" src="pictures\free-icon-shopaholic-5936393.png"></button>
+            <div id="basketModal" class="delivery-modal">
+                <div class="delivery-content">
+                    <div>
+                        <h2>Ваши товары:</h2>
+                        <ul id="basket-list"></ul>
+                    </div>
+                    <input id="closeBasket" type="submit" value="Close">
+                </div>
+            </div>
+        </div>
+        <div style="margin-left: 150px;">
+            <button><img title="Инстаграм" src="pictures\free-icon-instagram-739244.png" ></button>
+            <button><img title="ВКонтакте" src="pictures\free-icon-vk-2111828.png" ></button>
+            <button><img title="YouTube" src="pictures\free-icon-youtube-1077046.png"></button>
+        </div>
+    </div>
+    <!-- Вход / регистрация -->
+    <div class="registration">
+        <div style="margin-left: 1900px; margin-top: -100px;">
+            <button id="openModal"><img title="Вход" src="pictures\free-icon-login-square-arrow-button-outline-54874.png"></button>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+         <div class="modal-content">
+             <h1>Вход или регистрация</h1>
+             <button id="closeModal" class="close-button" ><img src="pictures\free-icon-close-page-8803479.png" style="width: 40px; height: 40px;"></button>
+             <label for="username">Login</label>
+             <input type="text" id="username" name="username" placeholder="Name..." required><br>   
+             
+             <label for="password">Password</label>
+             <input type="password" id="password" placeholder="Password..." required><br>
+             <div id="error-message" style="color: rgb(248, 19, 19);"></div><br>
+             
+             <div><input type="checkbox" id="showPassword"> Show password.</div><br>
+             
+             <form id="openEnter">
+                <button  type="submit" style="margin-left: 20px;" >Войти</button>
+             </form>
+             <button id="openRegistration" type="submit" style="margin-left: 180px; margin-top: -23px;" >Регистрация</button><br>
+             <!-- <input id="closeModal" type="submit" value="Close"> -->
+             
+         </div>
+    </div>
+    <div id="regModal" class="modal">
+        <div class="modal-content">
+             <div class="registration-block" >
+                <h1>Регистрация</h1>
+                <button id="closeRegistration" class="close-button2"><img src="pictures\free-icon-close-page-8803479.png" width="40px" height="40px"></button>
+                <label for="usernameReg">Login</label><br>
+                <input type="text" id="usernameReg" name="usernameReg" placeholder="Name..." required><br>
+
+                <br><label for="email">Email</label><br>
+                <input type="text" id="email" name="email" placeholder="email@mail.ru" required><br>
+
+                <br><lable for="password">Password</lable><br>
+                <input type="password" id="password1" placeholder="Password..." required><br>
+
+                <br><label for="password2">Repeat password</label><br>
+                <input type="password" id="password2" name="password2" placeholder="Repeat password..." required><br>
+            
+                <br><label>Age:</label><br>
+                <br><input type="radio" id="under_16" value="under_16" name="user_age">Больше 16<br>
+                <input type="radio" id="over_16" value="over_16" name="user_age">Меньше 16<br>
+
+                <h1>Расскажите о себе: </h1>
+                <br><textarea style="height: 100px; width: 500px;" id="biography" name="biography" placeholder="Biography..." required></textarea><br>
+
+                <br><label>Interests:</label><br>
+                <br><input type="checkbox" id="engineering" value="interest_engineering" name="user_interest">Hunting<br>
+                <br><input type="checkbox" id="business" value="interest_business" name="user_interest">Fishing<br>
+                <br><input type="checkbox" id="law" value="interest_law" name="user_interest">Tourism<br>
+
+                <br><label>Согласие на обработку персональных данных: </label><br>
+                <br><input type="checkbox" id="engineering" value="interest_engineering" name="user_interest">Да<br>
+                
+                <br><form id="formRegistration">
+                    <button type="submit" title="Регистрация" style="margin-top: -15px;">Submit</button>
+                    </form><br>
+             </div>
+        </div>
+    </div>
+    <!-- навигационная панель2 -->
+    <nav class="nav2">
+        <div style= "margin-top: 15px;">
+            <button><a href="#">Туризм</a></button>
+            <div class="dropdown-menu">
+                <a href="#" >Пункт 1</a>
+                <a href="#" >Пункт 2</a>
+                <a href="#">Пункт 3</a>
+            </div>
+        </div>
+        <div style=" margin-top: 15px;">
+            <button><a href="#">Одежда</a></button>
+            <div class="dropdown-menu">
+                <a href="#">Пункт 4</a>
+                <a href="#">Пункт 5</a>
+                <a href="#">Пункт 6</a>
+            </div>
+        </div>
+        <div style=" margin-top: 15px;">
+            <button><a href="#">Рыбалка</a></button>
+            <div class="dropdown-menu">
+                <a href="#">Пункт 7</a>
+                <a href="#">Пункт 8</a>
+                <a href="#">Пункт 9</a>
+            </div>
+        </div>
+        <div style=" margin-top: 15px;">
+            <button><a href="#">Охота</a></button>
+            <div class="dropdown-menu">
+                <a href="#">Пункт 10</a>
+                <a href="#">Пункт 11</a>
+                <a href="#">Пункт 12</a>
+            </div>
+        </div>
+    </nav>
+    <!-- центральный контент -->
+    <div class="central-content">
+        <div class="image-container">
+            <img class="image" src="pictures\костер.jpg" alt="Картинка 1" data-text="Открой мир новых приключений с каждым шагом в туризме!">
+            <div class="text-overlay">
+                <p></p>
+            </div>
+        </div>
+        <div class="image-container">
+            <img class="image" src="pictures\охота.webp" alt="Картинка 2" data-text="Исследуй древние леса и следуй за природой в охотничьих тропах.">
+            <div class="text-overlay">
+                <p></p>
+            </div>
+        </div>
+        <div class="image-container">
+            <img class="image" src="pictures\рыбалка.webp" alt="Картинка 3" data-text="Забудь о повседневности и окунись в мир увлекательной рыбалки, где ловля - это искусство!">
+            <div class="text-overlay">
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+        <div style= "padding-left: 550px;">
+            <table>
+               <tr>
+                 <td style="padding-left: 300px; padding-top: 50px;" class="text">
+                         <p class="text">Home</p>
+                         <p class="text">About</p>
+                         <p class="text">Gallery</p>
+                         <p  class="text">News</p>
+                 </td>
+                <td style="padding-left: 300px; padding-top: 50px;">
+                     <p class="text">Blog</p>
+                     <p class="text">FAQ</p>
+                     <p class="text">Contacts</p>
+                     <p class="text">Privacy & cookies</p>
+                </td>
+                <td style="padding-left: 300px; padding-top: 50px;"><p class="text">Способы оплаты</p>
+                     <img  src="pictures\dost.png">
+                 </td>
+               </tr>
+            </table>
+        </div>
+         <hr>
+         <div style="text-align: center;">
+            <span class="text"> &copy; Hunter 2018 - 2023</span>
+         </div>
+    </footer>
+
+    <script src="exam.js"></script>
+</body>
+</html>

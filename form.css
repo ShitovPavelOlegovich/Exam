@@ -1,0 +1,268 @@
+/* .container {
+    width: 500px;
+    background-color: rgb(165, 157, 157);
+    border: 3px solid rgb(92, 92, 124);
+    border-radius: 20px;
+    display: flex;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.container h2 {
+    text-align: left;
+    margin-top: 0;
+    margin-top: -350px;
+}
+.text {
+    text-align: left;
+    color: white;
+}
+.container form {
+    display: flex;
+    flex-direction: column;
+}
+.container label{
+    margin-bottom: 10px;
+}
+
+.container input[type="text"],
+.container input[type="email"],
+.container input[type="biography"],
+.container input[type="password"] {
+    margin-bottom: 10px;
+    width: 330px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgb(119, 117, 117);
+    border-radius: 10px;
+    font-size: 15px;
+    
+}
+
+.container input[type="text"]::placeholder,
+.container input[type="email"]::placeholder,
+.container input[type="biography"]::placeholder,
+.container input[type="password"]::placeholder {
+    color: rgb(126, 119, 119);
+}
+
+.container input[type="text"]:focus,
+.container input[type="email"]:focus,
+.container input[type="biography"]:focus,
+.container input[type="password"]:focus {
+    outline: none;
+    
+}
+.container input[type="text"] {
+    margin-right: 5px;
+}
+.container button[type="submit"] {
+    background-color: rgb(99, 99, 117);
+    color: white;
+    width: 430px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.7s;
+}
+.container button:hover {
+    height: 30px;
+} */
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    flex-direction: column;
+    background-color: rgb(165, 157, 157);
+    border: 3px solid rgb(92, 92, 124);
+    border-radius: 5px;
+    display: flex;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 15px;
+    
+}
+.modal-content input[type="submit"] {
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgb(92, 92, 124);
+    background-color:  rgb(92, 92, 124) ;
+    border-radius: 5px;
+    font-size: 15px;
+    
+}
+
+.modal button[type="submit"] {
+     background-color: rgb(99, 99, 117);
+     color: white;
+     width: 150px;
+     font-size: 18px;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: all 0.7s;
+ }
+ .modal input[type="checkbox"] {
+    margin-top: -5px;
+    margin-left: 15px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.modal input[type="text"],
+.modal input[type="password"],
+.modal input[type="submit"] {
+    margin-bottom: 10px;
+    width: 500px;
+    height: 30px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgb(92, 92, 124);
+    border-radius: 5px;
+    font-size: 15px;
+    
+}
+.modal button:hover {
+    transition: all 0.7s;
+}
+
+.modal button {
+    background-color: rgb(165, 157, 157);
+    transition: transform 0.2s;
+    
+}
+.modal button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    /* background-color: rgb(165, 157, 157); */
+}
+.close-button {
+    position: absolute;
+     /* Регулируйте вертикальное положение кнопки */
+    right: 1000px; /* Регулируйте горизонтальное положение кнопки */
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: -10px;
+   
+}
+.close-button2 {
+    position: absolute;
+     /* Регулируйте вертикальное положение кнопки */
+    right: 1000px; /* Регулируйте горизонтальное положение кнопки */
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: -90px;
+   
+}
+
+
+/* город */
+
+.city-modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+.city-content {
+    flex-direction: column;
+    background-color: rgb(165, 157, 157);
+    border: 3px solid rgb(92, 92, 124);
+    border-radius: 20px;
+    display: flex;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+.city-content input[type="submit"] {
+    margin-bottom: 10px;
+    width: 600px;
+    margin-top: 25px;
+    margin-left: 30px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgb(92, 92, 124);
+    background-color:  rgb(92, 92, 124) ;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: transform 0.2s;
+}
+.city-content input[type="submit"]:hover {
+    transform: scale(0.9);
+}
+
+.city-modal .text {
+    color: white;
+    margin-right: 200px;
+}
+.city-modal p {
+    cursor: pointer;
+}
+.city-modal p:hover {
+    color: #2e70d4;
+}
+
+
+
+/* доставка */
+.delivery-modal {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+.delivery-content {
+    flex-direction: column;
+    background-color: rgb(165, 157, 157);
+    border: 3px solid rgb(92, 92, 124);
+    border-radius: 20px;
+    display: flex;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+.delivery-content button {
+    background-color:  rgb(165, 157, 157);
+}
+.delivery-content button:hover {
+    cursor: pointer;
+    background-color: rgb(165, 157, 157);
+}
+
+.delivery-content input[type="submit"] {
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgb(92, 92, 124);
+    background-color:  rgb(92, 92, 124) ;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: transform 0.2s;
+}
+.delivery-content input[type="submit"]:hover {
+    transform: scale(0.9);
+}
